@@ -1,0 +1,274 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background: #17173b;
+    color: rgb(238, 234, 234);
+    padding: 40px 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+nav h1 {
+    font-size: 1.8em;
+}
+
+nav ul { /* Fixed typo from u1 to ul */
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.hero {
+    text-align: center;
+    margin-top: 20px;
+}
+
+section {
+    padding: 50px 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #35738b;
+}
+
+.skill-tags span {
+    background: #333;
+    color: white;
+    padding: 10px 15px;
+    margin: 5px;
+    border-radius: 8px;
+    display: inline-block;
+    transition: transform 0.3s;
+}
+
+.skill-tags span:hover {
+    transform: scale(1.1);
+}
+
+.project-card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: scale(1.02);
+}
+
+footer {
+    background: #0a0a23;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+
+#topBtn {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    padding: 10px;
+    border: none;
+    background: #ff9500;
+    color: white;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.scroll-section {
+    scroll-margin-top: 100px; /* Pushes the content below the fixed navbar */
+}
+
+.cert-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center horizontally */
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.cert-card {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    transition: transform 0.2s ease;
+    overflow: hidden;
+}
+
+.cert-card:hover {
+    transform: scale(1.02);
+}
+
+.cert-card img {
+    width: 100%;
+    cursor: pointer;
+    border-bottom: 1px solid #eee;
+}
+
+.cert-info {
+    padding: 15px;
+}
+
+.cert-info h4 {
+    font-size: 16px;
+    margin: 0 0 8px;
+    color: #333;
+}
+
+.cert-info {
+    font-size: 14;
+    color: #666;
+}
+
+/* Modal background and center setup */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.9);
+    justify-content: center;
+    align-items: center;
+}
+
+/* Make sure the image fits inside modal */
+.modal-content {
+    max-width: 90vw;
+    max-height: 90vh;
+    object-fit: contain;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+}
+
+/* Close button */
+.close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 35px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.profile-image {
+    width: 140px;
+    height: 140px;
+    border-radius: 70%;
+    border: 3px solid #452eaa;
+    object-fit: fill;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.profile-name {
+    margin-top: 15px;
+    font-size: 28px;
+    color: #0f638a;
+    font-weight: bold;
+    text-align: center;
+}
+#contact {
+    background-color: #fff;
+    padding: 50px 20px;
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+}
+
+#contact h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #35738b;
+}
+
+.contact-card {
+    background: #f1f1f1;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.contact-card:hover {
+    transform: scale(1.05);
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    font-size: 1.1em;
+    margin: 15px 0;
+}
+
+ul li a {
+    color: #35738b;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+ul li a:hover {
+    color: #ff9500;
+}
+
+@media (max-width: 600px) {
+    #contact {
+        padding: 30px 15px;
+    }
+    
+    .contact-card {
+        padding: 20px;
+    }
+}

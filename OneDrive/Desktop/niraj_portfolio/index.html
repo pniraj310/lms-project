@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Niraj Patel | Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="profile-container">
+            <img src="images/profile.jpg" alt="Profile Picture" class="profile-image" />
+            <h1 class="profile-name">Niraj Patel</h1>
+        </div>
+
+        <div class="hero">
+            <h2>Web & Software Developer</h2>
+            <p>Computer Engineering Student at G. V. Acharya Institute Of Engineering And Technology</p>
+        </div>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            Niraj Patel is a 21-year-old Computer Engineering student at GV Acharya Institute of Engineering and Technology. He is passionate about coding, software development, and web technologies. Niraj actively works on diverse projects, including an IRCTC clone, fake logo detection, deforestation monitoring using the Global Forest Watch API, a sustainable agriculture chatbot with crop yield prediction, and several web applications built with Python Flask.
+            <br><br>
+            He also creates content for social media and is planning to expand into coding-related videos on platforms like YouTube and Instagram.
+        </p>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skill-tags">
+            <span>Python</span>
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>C</span>
+            <span>C++</span>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-card">
+            <h3>1. IRCTC Clone</h3>
+            <p>A clone of the IRCTC railway booking system built as both a website and a software application. It simulates ticket booking, train searches, and user login functionalities.</p>
+
+            <h3>2. Fake Logo Detection</h3>
+            <p>Tools: Python, OpenCV, Deep Learning. Detects counterfeit logos using computer vision techniques and classification models.</p>
+
+            <h3>3. Deforestation Detection using Global Forest Watch API</h3>
+            <p>Tools: Python, APIs, Data Visualization. Fetches real-time deforestation data and visualizes forest loss globally.</p>
+
+            <h3>4. Sustainable Agriculture Chatbot with Crop Yield Prediction</h3>
+            <p>Tools: Python, Streamlit, Weather APIs, ML Models. Recommends crops and predicts yield based on weather and seasonal data.</p>
+
+            <h3>5. Python Flask Web Apps</h3>
+            <p>Includes product showcase, login system with SQL, admin features, shopping cart, and search filters.</p>
+        </div>
+    </section>
+
+    <section id="Certificates">
+        <h2 style="text-align: center;">Certificates & Achievements</h2>
+        <div class="cert-card-container">
+            <div class="cert-card">
+                <img src="images/edunet.jpg" alt="Green Skill and AI Certificate" />
+                <div class="cert-info">
+                    <h4>Green Skill and Artificial Intelligence</h4>
+                    <p>Edunet Foundation</p>
+                </div>
+            </div>
+
+            <div class="cert-card">
+                <img src="images/paper presentation.jpg" alt="Technical Paper Presentation" />
+                <div class="cert-info">
+                    <h4>Winner in Technical Paper Presentation</h4>
+                    <p>College Event</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="imgModal" class="modal" onclick="closeModal()">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="modalImage" />
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <div class="contact-card">
+            <ul>
+                <li>Email: <a href="mailto:pniraj310@gmail.com">pniraj310@gmail.com</a></li>
+                <li>Phone: <a href="tel:+919309826762">9309826762</a></li>
+                <li>LinkedIn: <a href="https://www.linkedin.com/in/niraj-patel-836a89233" target="_blank">LinkedIn</a></li>
+                <li>GitHub: <a href="https://github.com/pniraj310" target="_blank">GitHub</a></li>
+            </ul>
+        </div>
+    </section>
+    
+
+    <footer>
+        <p>© 2025 Niraj Patel. All rights reserved.</p>
+        <button id="topBtn">↑ Top</button>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
