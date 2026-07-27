@@ -1,6 +1,6 @@
 # 📚 Learning Management System (LMS)
-### Built with Java + JDBC + MySQL + Swing
-#### Developed by: Niraj Patel | SochTech | Final Year Project
+### Built with Java + JDBC + PostgreSQL + Swing
+#### Developed by: Niraj Patel
 
 ---
 
@@ -19,7 +19,7 @@ USER  ──► LoginFrame (UI)
               ├─► TeacherDashboard  ──► CourseDAO / QuizDAO / ResultDAO
               └─► AdminDashboard    ──► UserDAO / CourseDAO / ChatbotDAO
                         │
-              All DAOs  ──► DBConnection (JDBC Singleton) ──► MySQL (lms_db)
+              All DAOs  ──► DBConnection (JDBC Singleton) ──► PostgreSQL (lms_db)
 ```
 
 | Layer | Package | Purpose |
@@ -63,7 +63,7 @@ USER  ──► LoginFrame (UI)
 |---|---|
 | Java (JDK 8+) | Core language |
 | JDBC | Database connectivity |
-| MySQL 8.x | Relational database |
+| PostgreSQL | Relational database |
 | Swing | Desktop GUI |
 | PreparedStatement | SQL injection prevention |
 | Singleton Pattern | Single DB connection |
@@ -110,12 +110,12 @@ LMS/
 
 ### Prerequisites
 - Java JDK 8+ → `java -version`
-- MySQL 8.x running
-- MySQL Connector/J 8.0.33 JAR → [Download here](https://dev.mysql.com/downloads/connector/j/) → place in `lib/`
+- PostgreSQL running
+- PostgreSQL Connector/J 8.0.33 JAR → [Download here](https://dev.postgresql.com/downloads/connector/j/) → place in `lib/`
 
 ### Step 1 — Create Database
 ```sql
-mysql -u root -p
+postgresql -u root -p
 source /path/to/LMS/sql/schema.sql;
 ```
 
